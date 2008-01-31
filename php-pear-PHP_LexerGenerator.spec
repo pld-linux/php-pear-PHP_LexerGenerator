@@ -9,7 +9,7 @@ Summary:	%{_pearname} - translate lexer files in lex2php format into a PHP 5 lex
 Summary(pl.UTF-8):	%{_pearname} - tłumaczenia plików leksera z formatu lex2php do leksera PHP 5
 Name:		php-pear-%{_pearname}
 Version:	0.3.4
-Release:	1
+Release:	2
 License:	New BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
