@@ -1,12 +1,10 @@
-# TODO:
-# - verify pl translation
 %include	/usr/lib/rpm/macros.php
 %define		_class		PHP
 %define		_subclass	LexerGenerator
 %define		_status		alpha
 %define		_pearname	PHP_LexerGenerator
 Summary:	%{_pearname} - translate lexer files in lex2php format into a PHP 5 lexer
-Summary(pl.UTF-8):	%{_pearname} - tłumaczenia plików leksera z formatu lex2php do leksera PHP 5
+Summary(pl.UTF-8):	%{_pearname} - tłumaczenie plików leksera z formatu lex2php do leksera PHP 5
 Name:		php-pear-%{_pearname}
 Version:	0.3.4
 Release:	2
@@ -22,8 +20,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Translate a lexer file with a format similar to re2c (http://re2c.org)
-into a PHP 5 lexer for use with a parser.
+Translate a lexer file with a format similar to re2c
+(http://re2c.org/) into a PHP 5 lexer for use with a parser.
 
 Unlike re2c (as of re2c version 0.11), generated lexers are
 state-aware out of the box.
@@ -41,18 +39,19 @@ In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
 Pakiet ten umożliwia tłumaczenie plików leksera formatu zbliżonego do
-re2c (http://re2c.org) do formatu leksera PHP 5.
+re2c (http://re2c.org/) do formatu leksera PHP 5.
 
 W odróżnieniu od re2c (w wersji 0.11), wygenerowane leksery domyślnie
 są świadome stanu.
 
-Wygenerowane lekery są bardzo wydajne, co najmniej dwa razy niż
-alternatywy takie jak csLex (napisany w C#), ponieważ wykorzystują
-wbudowany w PHP silnik wyrażeń regularnych w celu leksowania tokenów.
+Wygenerowane lekery są bardzo wydajne, co najmniej dwa razy bardziej
+niż alternatywy takie jak csLex (napisany w C#), ponieważ wykorzystują
+wbudowany w PHP silnik wyrażeń regularnych w celu dopasowywania
+tokenów.
 
 Od wersji 0.3.0, korzystając z instrukcji %%longestmatch wygenerowane
 leksery będą zawsze wybierały najdłuższy pasujący łańcuch znaków,
-zamiast pierwszego. Wygnerowane tokeny będą odrobinę wolniejsze, ale
+zamiast pierwszego. Wygenerowane tokeny będą odrobinę wolniejsze, ale
 zachowywać się będą w sposób zbliżony do klasycznych lekserów takich
 jak flex, lex, re2c.
 
