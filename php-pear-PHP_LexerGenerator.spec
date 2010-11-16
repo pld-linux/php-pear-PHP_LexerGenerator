@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - translate lexer files in lex2php format into a PHP 5 lexer
 Summary(pl.UTF-8):	%{_pearname} - tłumaczenie plików leksera z formatu lex2php do leksera PHP 5
 Name:		php-pear-%{_pearname}
-Version:	0.3.4
-Release:	2
+Version:	0.4.0
+Release:	1
 License:	New BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	e357a7fd477acd456923ac337fca32ac
+# Source0-md5:	e4c26822a30854ac30022f0679b6f66f
 URL:		http://pear.php.net/package/PHP_LexerGenerator/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -62,9 +62,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
@@ -87,7 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc install.log docs/PHP_LexerGenerator/examples
-%attr(755,root,root) %{_bindir}/plex 
+%attr(755,root,root) %{_bindir}/plex
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/PHP/LexerGenerator
 %{php_pear_dir}/PHP/LexerGenerator.php
