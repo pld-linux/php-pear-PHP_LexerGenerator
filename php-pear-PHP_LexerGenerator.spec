@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	PHP_LexerGenerator
 Summary:	%{_pearname} - translate lexer files in lex2php format into a PHP 5 lexer
